@@ -3,10 +3,13 @@
         opacity: 0;
         transform: translateX(-50px);
     }
-
+    75% {
+        opacity: 0.75;
+        transform: translateX(5px);
+    }
     100% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0px);
     }
 }
 
@@ -14,24 +17,23 @@
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
 }
 
-.fade-in {
+#subtitle {
     animation: fadeInLeftToRight 1s ease-in-out forwards;
 }
 
 #btn {
-    animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-#btn {
-    transition: .25s;
+    animation: fadeIn 1s ease-in-out forwards;
+    transition: .750s;
 }
 
 #btn:hover {
     transform: scale(1.1);
+}
+
+#bgcolortext {
 }

@@ -29,7 +29,7 @@ const colors = [
 
 const button = document.getElementById('btn');
 const background = document.getElementById('background');
-let text = document.getElementById('bgcolortext');
+const text = document.getElementById('bgcolortext');
 button.addEventListener('click', () => {
     // Select a random color
     let randomColor = selectRandomElement(colors);
@@ -44,6 +44,17 @@ button.addEventListener('click', () => {
 
     // Display color's name
     text.innerText = randomColor;
+
+    // Animate the text and disable button until animations are done
+    const animDurationMs = 1000;
+    text.style.animation = `fadeIn ${animDurationMs}ms`;
+    button.disabled = true;
+    setTimeout(() => {
+        text.style.animation = '';
+        button.disabled = '';
+    }, animDurationMs);
+
+    // Disable the button until animations done playing
 })
 
 // Click the "Flip color" button once to give the bg a starting color
