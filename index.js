@@ -24,7 +24,7 @@ const colors = [
 
 // The button that will
 const button = document.getElementById('btn');
-const background = document.getElementById('test');
+const background = document.getElementById('background');
 let bgColorText = document.getElementById('bgcolortext');
 button.addEventListener('click', () => {
     const randomColor = colors[getRandomInt(colors.length)];
