@@ -45,3 +45,6 @@ button.addEventListener('click', () => {
     // Display color's name
     text.innerText = randomColor;
 })
+
+// Click the "Flip color" button once to give the bg a starting color
+button.click();
