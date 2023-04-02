@@ -28,11 +28,11 @@
 
 #btn {
     animation: fadeIn 1s ease-in-out forwards;
-    transition: .750s;
+    transition: .5s;
 }
 
 #btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 #bgcolortext {

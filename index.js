@@ -28,32 +28,31 @@ const colors = [
 
 
 const button = document.getElementById('btn');
-const background = document.getElementById('background');
-const text = document.getElementById('bgcolortext');
+const colorElement = document.getElementById('colorElement');
+const text = document.getElementById('colortext');
 button.addEventListener('click', () => {
     // Select a random color
     let randomColor = selectRandomElement(colors);
 
     // If the random color is the same as the background's current color, get another random one
-    while (randomColor === background.style.backgroundColor) {
+    while (randomColor === colorElement.style.backgroundColor) {
         randomColor = selectRandomElement(colors);
     }
 
     // Apply random color to background
-    background.style.backgroundColor = randomColor;
+    colorElement.style.backgroundColor = randomColor;
 
     // Display color's name
     text.innerText = randomColor;
 
     // Animate the text and disable button until animations are done
-    const animDurationMs = 1000;
+    const animDurationMs = 250;
     text.style.animation = `fadeIn ${animDurationMs}ms`;
     button.disabled = true;
     setTimeout(() => {
         text.style.animation = '';
         button.disabled = '';
     }, animDurationMs);
-
     // Disable the button until animations done playing
 })
 
