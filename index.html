@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-theme="dark">
+    <!--Navbar-->
+    <nav class="navbar shadow-sm navbar-expand-lg border-bottom border-light mb-5">
+        <div class="container">
+            <a class="navbar-brand" href="#">Color Flipper</a>
+        </div>
+    </nav>
+
+    <!--Header-->
+    <header class="container mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <h1 class="display-4">Color Flipper</h1>
+                    <p class="lead fade-in">Background color: <span id="bgcolortext"></span></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mb-5 container text-center p-5" id="test">
+        <button type="button" class="btn btn-primary" id="btn">Flip color</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
