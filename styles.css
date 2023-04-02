@@ -27,3 +27,11 @@
 #btn {
     animation: fadeIn 1.5s ease-in-out forwards;
 }
+
+#btn {
+    transition: .25s;
+}
+
+#btn:hover {
+    transform: scale(1.1);
+}
